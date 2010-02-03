@@ -28,7 +28,7 @@ class TF2Player
         $this->destructions = $stuff['Most destruction:'];
         $this->dominations = $stuff['Most dominations:'];
         $this->revenges = $stuff['Most revenges:'];
-        $this->uberCharges = $stuff['Most UberCharges:'];
+        $this->uberCharges = utf8_encode($stuff['Most ÜberCharges:']);
         $this->longestLife = TF2Formatter::formatLongestLife($stuff['Longest life:']);
         $this->totalTime = $stuff['Total time:'];
     }

@@ -137,7 +137,7 @@ class PersonalRecord
         $this->MostDestruction = new PersonalRecordItem($stuff['Most destruction:']);
         $this->MostDominations = new PersonalRecordItem($stuff['Most dominations:']);
         $this->MostRevenges = new PersonalRecordItem($stuff['Most revenges:']);
-        $this->MostUberCharges = new PersonalRecordItem($stuff['Most UberCharges:']);
+        $this->MostUberCharges = new PersonalRecordItem(utf8_encode($stuff['Most ÜberCharges:']));
         $this->MostLongestLife = new PersonalRecordItem($stuff['Longest life:']);
         $this->MostBackstabs = new PersonalRecordItem($stuff['Most backstabs:']);
         $this->MostBuildingsBuilt = new PersonalRecordItem($stuff['Most buildings built:']);
